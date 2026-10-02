@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Containers and idenity</title>
+    <title>Containers and Identity</title>
     <style>
         .highlight {
             background-color:pink;
@@ -13,23 +13,41 @@
     } 
     .card {
         background-color: bisque;
+        border: 2px solid black; 
+        border-radius: 8px; 
+    }
+    #main-nav {
+        background: rgb(97, 9, 97); 
+        color: white;
+    }
+
+    .price {
+        color: green ;
+        font-weight: bold ; 
     }
     </style>
 </head>
 <body>
+    <nav id="main-nav">...nav links...</nav>
+    <!-- p.class?-->
     <p class="highlight">First Note</p>
     <p class="highlight">Second Note</p>
     <p class="highlight">Third Note</p> 
+    <p>A plain note- no class, no color</p>
 
     <!--(div.card>h2+p)*2-->
 <div class="card">
     <h2>Product A</h2>
     <p>First Product </p>
 </div>
+
 <div class="card">
     <h2>Product B</h2>
     <p>Second Product</p>
 </div>
+
+<p>The rice is <span class="price">$29</span> today only!</p>
+
     <footer id="site-footer"> 
         @ 2026 Club Sign-Up
     </footer>
